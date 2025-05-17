@@ -67,36 +67,46 @@ New EC2  ![image](https://github.com/user-attachments/assets/2460235c-2011-47ca-
  EC2 ![image](https://github.com/user-attachments/assets/b0e18fb8-ce70-4afc-92f6-d71b5c275e24) ![image](https://github.com/user-attachments/assets/8a167db4-5b79-47b6-8421-d9ad0db713ee)
  ![image](https://github.com/user-attachments/assets/c9832d82-355e-4a32-a2b5-2ba244bef23a) 
 
-
-
-
-
-
- 
-
-
- 
-
-
-
-
-
-
-
-
-
+### ✅ Step 5: Creating lambda function for sales report
+![image](https://github.com/user-attachments/assets/0d0983dc-60ae-4595-a4c5-e7abb249dd9f) ![image](https://github.com/user-attachments/assets/eb3aca73-25de-478c-8137-6a1d63d50409)
+![image](https://github.com/user-attachments/assets/ff3b8ab1-ee5a-4a5a-bf3b-2bbd0481b6d7) ![image](https://github.com/user-attachments/assets/43851cf9-7a64-4d76-ae37-eb89902c773f)
+![image](https://github.com/user-attachments/assets/4d287057-bc11-4ad7-9395-875e84764d8b) ![image](https://github.com/user-attachments/assets/798e7669-d6e2-48b3-975a-4864d9192ae3)
+Creating the SalesAnalysisReport Lambda function ![image](https://github.com/user-attachments/assets/f7372a0c-1484-4b8d-9f6e-0e5a28acbe24)
+![image](https://github.com/user-attachments/assets/a4a85e5e-4d12-4698-9be7-17e362da26f8) 
+Creating an SNS topic ![image](https://github.com/user-attachments/assets/a00d6c13-1264-4d83-8d5e-2c1027afe9ad) ![image](https://github.com/user-attachments/assets/8518a751-bc0e-4ca1-8458-547cebdcf128)
+![image](https://github.com/user-attachments/assets/8831a887-2268-44ad-9c39-426f1dbd44e0) 
+Creating an email subscription to the SNS topic ![image](https://github.com/user-attachments/assets/6c93107a-48b0-42b2-99af-036a9463481d) 
+Testing the salesAnalysisReport Lambda function ![image](https://github.com/user-attachments/assets/e6b46b2a-a758-4fed-9957-7603e7fb5562) ![image](https://github.com/user-attachments/assets/61214730-c400-49e7-b374-1ad127ddbe48)
+Daily Sales Report on my personal email : ![image](https://github.com/user-attachments/assets/e5259ca2-aa59-4dc7-9ba6-83b3fa6b2ecd) 
 
 
 
 ## 📈 Outcome
 
-The café's static website is now publicly accessible and provides a polished, professional digital presence. This initial deployment lays the groundwork for further phases, including dynamic features, serverless enhancements, and scalability improvements.
+This end-to-end AWS project successfully delivered a scalable, secure, and resilient cloud-based web presence for the café. It started with a static website hosted on S3, expanded into a dynamic web app on EC2, and scaled across multiple regions with AMIs. A bastion-host-enabled private subnet was configured for enhanced network security. Lastly, a serverless architecture was implemented using Lambda and SNS to generate and distribute daily sales reports via email — demonstrating real-world cloud design, monitoring, and automation capabilities.
 
----
+
 
 ## 🛠️ Key AWS Services Used
 
-- **Amazon S3** – For hosting the static website.
-- **Amazon Route 53 (optional)** – For custom domain name mapping (if required).
-- **AWS IAM** – To manage access permissions securely.
+**Amazon S3 – For static website hosting.**
 
+**Amazon EC2 – To host and scale the dynamic website and database.**
+
+**Amazon RDS / MariaDB – To manage café data through a relational database.**
+
+**Amazon VPC – Custom networking for both public and private subnets.**
+
+**NAT Gateway & Internet Gateway – For internet access configuration.**
+
+**Amazon SNS – To email daily sales reports.**
+
+**AWS Lambda – To generate automated serverless reports.**
+
+**Amazon Cloud9 – For code editing and CLI interactions.**
+
+**IAM – Secure access control to all AWS resources.**
+
+**Amazon AMI – To replicate app instances across regions.**
+
+**Amazon Route 53 – For future DNS-based custom domain support.**
