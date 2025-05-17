@@ -44,7 +44,7 @@ Testing the web application> Order submitted > Order History
 ![image](https://github.com/user-attachments/assets/23ada38e-442c-4584-9b3b-81a5dc2f36a4) ![image](https://github.com/user-attachments/assets/f3528773-9871-4a8e-b856-871ea1bb4553)
 
 
-### ✅ Step 3: : Creating an AMI and launching another EC2 instance for second region
+### ✅ Step 3: Creating an AMI and launching another EC2 instance for second region
 -static internal hostname and create a new key pair on the EC2 instance ![image](https://github.com/user-attachments/assets/96163c27-aad7-4880-8249-99413e4cdcfb)
 Attached role ![image](https://github.com/user-attachments/assets/3e409968-483e-417a-a960-c89461568f99) 
 Creating AMI (Image) : ![image](https://github.com/user-attachments/assets/ed2760ca-66a1-4799-baf8-1ccd24ec6eeb) ![image](https://github.com/user-attachments/assets/5b883ff1-40f4-4041-9277-44544e1a9f2a)
@@ -54,23 +54,25 @@ Creating new café instance ![image](https://github.com/user-attachments/assets/
 ![image](https://github.com/user-attachments/assets/c30047b5-a41d-4e4c-9d99-07bbb9a2dad8) role we created ![image](https://github.com/user-attachments/assets/b8ad0d37-abb8-4142-8561-ecc35e8f7663)
 New EC2  ![image](https://github.com/user-attachments/assets/2460235c-2011-47ca-98d1-f174372fbe70) 
 
+### ✅ Step 4: Creating a Bastion host Networking Environment for the Café
+-Creating a public subnet ![image](https://github.com/user-attachments/assets/eb7d6376-65f0-4e17-8475-53d3968cf16e) ![image](https://github.com/user-attachments/assets/935b2a79-3d33-4f86-a255-fdf13bbde949)
+-Attaching internet gateway to the VPC ![image](https://github.com/user-attachments/assets/d46b64d5-891f-43df-bb3b-1eb9efdcd7fa) ![image](https://github.com/user-attachments/assets/d110b79e-2d10-4225-ac1a-ea2291547388) 
+ Creating a bastion host ![image](https://github.com/user-attachments/assets/36db379b-09ee-464c-a403-610924e119b1) ![image](https://github.com/user-attachments/assets/1a09e5bf-cd28-49d6-9f57-8b95e6170f3d)
+ ![image](https://github.com/user-attachments/assets/98ad959e-97b1-443c-b6c8-182d3c1354eb) ![image](https://github.com/user-attachments/assets/0501522f-aa0d-4128-9fd8-90cbe5e37b02)
+ Testing the connection to the bastion host ![image](https://github.com/user-attachments/assets/da4a265e-ca30-428f-b483-a3af503469e6) 
+ Creating a private subnet ![image](https://github.com/user-attachments/assets/c732b8cd-0757-49b9-9b08-4210208aea80) 
+ Creating a NAT gateway ![image](https://github.com/user-attachments/assets/beee736f-e27d-4a19-8bbc-bbe2891b2743) ![image](https://github.com/user-attachments/assets/9293e5f2-3bcb-4bda-8ad0-d270d6a1e301)
+ Creating an EC2 instance in the private subnet  ![image](https://github.com/user-attachments/assets/b7c6b433-465d-4edb-a3d7-2a6f40931095)
+ vockey key ![image](https://github.com/user-attachments/assets/a579f32f-6b16-4176-8de0-18af95d50e01) 
+ EC2 ![image](https://github.com/user-attachments/assets/b0e18fb8-ce70-4afc-92f6-d71b5c275e24) ![image](https://github.com/user-attachments/assets/8a167db4-5b79-47b6-8421-d9ad0db713ee)
+ ![image](https://github.com/user-attachments/assets/c9832d82-355e-4a32-a2b5-2ba244bef23a) 
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
  
@@ -83,41 +85,6 @@ New EC2  ![image](https://github.com/user-attachments/assets/2460235c-2011-47ca-
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- Disabled block public access to allow web access.
-- ![image](https://github.com/user-attachments/assets/b4238e17-6296-40cb-8860-d764abb6b75f)
-
-
-### ✅ Step 2: Uploaded Static Website Files
-- HTML, CSS, images, and other assets uploaded via AWS Console.
-- Index document set to `index.html`.
-
-### ✅ Step 3: Configured Bucket for Static Website Hosting
-- Enabled **Static Website Hosting** in bucket properties.
-- Defined `index.html` as the default page.
-
-### ✅ Step 4: Set Bucket Policy for Public Read Access
-- Added JSON bucket policy to allow public access to objects.
-
-### ✅ Step 5: Verified Public Access
-- Accessed the S3 website endpoint in the browser.
-- Verified all pages and assets were loading correctly.
-
----
 
 
 
@@ -132,15 +99,4 @@ The café's static website is now publicly accessible and provides a polished, p
 - **Amazon S3** – For hosting the static website.
 - **Amazon Route 53 (optional)** – For custom domain name mapping (if required).
 - **AWS IAM** – To manage access permissions securely.
-
-
-## 🧩 Next Steps
-
-This project is followed by additional challenge labs:
-- 🌐 Dynamic Website for the Café (Module 5)
-- 🛠️ VPC Networking (Module 7)
-- 📈 Scalable and Highly Available Architecture (Module 10)
-- ⚙️ Serverless Infrastructure (Module 14)
-
-Stay tuned for more enhancements!
 
